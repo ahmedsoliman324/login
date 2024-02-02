@@ -1,0 +1,493 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+body {
+    background-color: white;
+
+    width: 100%;
+    height: 100vh;
+}
+
+/* body {
+    background-color: white;
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body::after{
+    content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #228b22d8;
+    clip-path: circle(35% at right 100%);
+    z-index: -1;
+
+}
+body::before{
+    content: '';
+    position: absolute;
+   width: 100%;
+   height: 100%;
+    background-color: #228b22d8;
+    clip-path: circle(40% at left -10%);
+    z-index: -1;
+     */
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    ;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.container .navbar {
+    width: 100%;
+    /* background-color: rgba(223, 210, 210, 0.315); */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .navbar h1 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #228b22d8;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 25px;
+    margin-left: 5px;
+
+}
+
+.navbar li a {
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+
+
+}
+
+.navbar li a:hover {
+
+    color: #228b22d8;
+    text-decoration: underline;
+
+}
+
+.navbar .btn {
+    background-color: #228b22d8;
+    color: rgb(255, 255, 255);
+    height: 95%;
+    width: 150px;
+    height: 35px;
+    outline: 0;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0)
+}
+
+.navbar .btn:hover {
+    scale: 1.04;
+}
+ .navbar i{
+    display: none;
+}
+
+.loginform {
+    width: 100%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.loginform .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 60%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.content::after {
+    position: absolute;
+    content: '';
+    width:30%;
+    height: 100%;
+    background-color: #228b22d8;
+    left: 0;
+    border-radius: 15px 50px 50px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+
+}
+
+.loginform .content .text {
+    color: white;
+    z-index: 2;
+    text-transform: capitalize;
+    line-height: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.content .text h1 {
+    letter-spacing: 2px;
+    font-size: 2.7em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.content .text p {
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 5px;
+    line-height: 35px;
+}
+
+.loginform .content .form {
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    width: 30%;
+    border-left: 1px double #000000;
+    padding-left: 25px;
+    /* border-radius: 7px; */
+
+
+
+}
+
+.loginform .content .form h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    background-color: #228b22;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
+}
+
+.loginform .content .form .partone {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.content .form .partone input {
+    padding: 15px;
+    outline: 0;
+    transition: 0.3s;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+}
+
+.form .partone a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.7em;
+    padding: 0px 3px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.form .partone a:hover {
+    text-decoration: underline;
+    color: #228b22d8;
+}
+
+.content .form .go {
+    background-color: #228b22;
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.content .form .go:hover {
+    background-color: #228b22b6;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+
+}
+
+.icons a {
+    font-size: 1.5em;
+    color: #228b22;
+}
+@media (max-width: 600px) {
+    
+ 
+    .navbar li a{
+        font-size: 0.8em;
+       }
+   
+   
+  
+
+  
+   
+
+  
+    .content .form .go {
+          font-family: 'Times New Roman', Times, serif;
+          background-color: #228b22;
+}
+.container .navbar h1{
+font-size: 1.5em;
+}
+.navbar .btn {
+    padding: 3px;
+    font-size: 0.7em;
+    border-radius: 10px;
+    width: 100px;
+  }
+  .loginform .content {
+ 
+   display: flex;
+  
+   flex-direction: column;
+ 
+   padding: 0px 40px;
+   width: 100%;
+   height: 80%;
+   
+   box-shadow: none
+}
+.content::after,.content .text h1,.content .text p {
+   display: none;
+ 
+     }
+
+
+ 
+
+.loginform .content .form {
+   width: 100%;
+   border: none
+   ;
+   gap: 50px;
+   
+}
+.loginform .content .form .partone {
+   gap: 35px;
+}
+.content .form .partone input {
+   border: none;
+   border-bottom: 1px solid;
+   border-radius: 0px;
+}
+
+    }
+
+@media (min-width:601px) and (max-width: 1150px) {
+    .loginform .content{
+        width: 80%;
+    }
+    .loginform .content .form{
+        width: 50%;
+    }
+    .content .text h1 {
+      
+        font-size: 2em;
+    }
+    .navbar li a{
+        font-size: 1em;
+       }
+       .navbar li {
+        display: inline-block;
+        padding: 0px 60px;
+        margin-left: 2px;
+    
+    }
+   
+    
+    .content .text p {
+      
+        font-size: 1em;
+     
+     
+    }
+}
+
+@media (min-height:501px) and (max-height:700px) {
+
+
+    .loginform .content {
+        height: 80%;
+        
+   
+    }
+    .loginform .content .form h1 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 1.8em;
+      padding: 5px;
+    }
+    .content .form .partone input {
+        padding: 5px;
+        outline: 0;
+        transition: 0.3s;
+        border:none;
+        border-radius: 0px;
+        border-bottom:1px #000000 solid;
+    }
+    .loginform .content .form .partone {
+        gap: 10px;
+    }
+    .content .form .go {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+}
+   @media (max-height:500px) {
+    .loginform .content .form h1 {
+        margin-bottom: 15px;
+        margin-top: 5px;
+        font-size: 1.5em;
+      padding: 3px;
+    }
+    .content .form .partone input {
+        padding: 3px;
+        outline: 0;
+        transition: 0.3s;
+        border:none;
+       
+        border-radius: 0px;
+        border-bottom:1px #000000 solid;
+    }
+    .content .form .go{
+        margin-bottom: 10px;
+        padding: 3px;
+        font-size: 1em;
+    }
+    .icons {
+        display: flex;
+        gap: 10px;
+        font-size: 10px;
+        justify-content: center;
+        margin-bottom: 5px;
+    
+    
+    }
+    .loginform .content {
+        height: 75%;
+        
+   
+    }
+    .loginform .content .form .partone {
+        gap: 10px;
+    }
+   }
+   @media (min-height:701px) and (max-height:850px) {
+    .loginform .content .form h1 {
+        margin-bottom: 25px;
+        margin-top: 5px;
+        font-size: 1.8em;
+      padding: 5px;
+    }
+    .content .form .partone input {
+        padding: 10px;
+        outline: 0;
+        transition: 0.3s;
+        border:none;
+       
+        border-radius: 0px;
+        border-bottom:1px #000000 solid;
+    }
+    .content .form .go{
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 1.3em;
+    }
+    .icons {
+        display: flex;
+        gap: 10px;
+        font-size: 15px;
+        justify-content: center;
+        margin-bottom: 5px;
+    
+    
+    }
+    .loginform .content {
+        height: 70%;
+        
+   
+    }
+    .loginform .content .form .partone {
+        gap: 15px;
+    }
+
+}
